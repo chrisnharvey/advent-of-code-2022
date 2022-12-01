@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/chrisnharvey/advent-of-code/one"
+	"github.com/chrisnharvey/advent-of-code/day01"
 	"github.com/spf13/cobra"
 )
 
@@ -14,7 +14,7 @@ func main() {
 		Short: "Advent of code challenges",
 	}
 
-	rootCmd.AddCommand(one.NewCommand())
+	rootCmd.AddCommand(day01.NewCommand())
 
 	if err := rootCmd.Execute(); err != nil {
 		fmt.Println(err)

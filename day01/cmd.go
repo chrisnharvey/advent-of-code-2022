@@ -1,4 +1,4 @@
-package one
+package day01
 
 import (
 	"bufio"
@@ -31,7 +31,7 @@ func NewCommand() *cobra.Command {
 func execute(cmd *cobra.Command, args []string) error {
 	topNo, _ := strconv.Atoi(args[0])
 
-	file, err := os.Open("one/input")
+	file, err := os.Open("day01/input")
 
 	if err != nil {
 		return err
