@@ -13,8 +13,8 @@ import (
 
 func NewCommand() *cobra.Command {
 	return &cobra.Command{
-		Use: "one",
-		Short: "Challenge 1",
+		Use:   "day01",
+		Short: "Day 1",
 		Args: func(cmd *cobra.Command, args []string) error {
 			if len(args) != 1 {
 				return errors.New("pass number to sum")
