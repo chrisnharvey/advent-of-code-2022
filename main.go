@@ -8,6 +8,7 @@ import (
 	"github.com/chrisnharvey/advent-of-code/day02"
 	"github.com/chrisnharvey/advent-of-code/day03"
 	"github.com/chrisnharvey/advent-of-code/day04"
+	"github.com/chrisnharvey/advent-of-code/day05"
 	"github.com/spf13/cobra"
 )
 
@@ -21,6 +22,7 @@ func main() {
 	rootCmd.AddCommand(day02.NewCommand())
 	rootCmd.AddCommand(day03.NewCommand())
 	rootCmd.AddCommand(day04.NewCommand())
+	rootCmd.AddCommand(day05.NewCommand())
 
 	if err := rootCmd.Execute(); err != nil {
 		fmt.Println(err)
